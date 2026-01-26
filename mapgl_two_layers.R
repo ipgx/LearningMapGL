@@ -4,6 +4,7 @@ library(tidyverse)
 # Set Mapbox token from environment or secrets
 setwd("~/Documents/LearningMapGL")
 source("./Secrets/AT.R")
+Sys.setenv(MAPBOX_PUBLIC_TOKEN = access_token)
 
 # Create sample data for two different point layers
 # Layer 1: Coffee shops
@@ -79,3 +80,10 @@ mapboxgl(
     ),
     position = "top-right"
   )
+
+
+
+
+
+mapboxgl() |>
+  add_draw_control(radius = TRUE)
