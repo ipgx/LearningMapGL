@@ -1,5 +1,6 @@
 # History files
 **/Secrets/
+**/data/
 .Rhistory
 .Rapp.history
 
